@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide  /installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body>
+    <div id="app" class="h-screen bg-gray-300">
+        <div class="container flex justify-center py-20">
+            <div class="p-3 bg-white rounded-xl max-w-lg hover:shadow">
+                <div class="flex justify-between w-full"> <img v-bind:src="url" width="150" class="rounded-lg">
+                    <div class="ml-2">
+                        <div class="p-3">
+                            <h3  class="text-2xl">{{firstname}} {{lastname}}</h3> <span>{{education}}</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
+                            <div class="mr-3"> <span class="text-gray-400 block">Article</span> <span class="font-bold text-black text-xl">{{article}}</span> </div>
+                            <div class="mr-3"> <span class="text-gray-400 block">Followers</span> <span class="font-bold text-black text-xl">{{followers}}</span> </div>
+                            <div> <span class="text-gray-400 block">Ratings</span> <span class="font-bold text-black text-xl">{{ratings}}</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mt-2 gap-2"> <button class="w-full h-12 rounded-md border-2 text-md hover:shadow hover:bg-red-700 hover:border-red-700 hover:text-white ">Chat</button> <button class="w-full h-12 rounded-md bg-blue-700 text-white text-md hover:shadow hover:bg-blue-800">Chat</button> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./profile.js"></script>
+</body>
+
+</html>
